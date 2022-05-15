@@ -10,6 +10,25 @@
       "StackName": "amplify-authsample-dev-144759",
       "StackId": "arn:aws:cloudformation:us-east-1:129622671364:stack/amplify-authsample-dev-144759/dfd0caf0-d444-11ec-b81e-0a132a39f423",
       "AmplifyAppId": "d3ofon0e63rrmi"
+    },
+    "categories": {
+      "function": {
+        "authsample4fb6d31eCustomMessage": {
+          "REDIRECTURL": "",
+          "EMAILSUBJECT": "Confirm E-mail",
+          "EMAILMESSAGE": "Please confirm your e-mail.",
+          "deploymentBucketName": "amplify-authsample-dev-144759-deployment",
+          "s3Key": "amplify-builds/authsample4fb6d31eCustomMessage-6e44456e615454743134-build.zip"
+        }
+      },
+      "auth": {
+        "authsamplee7e4a287": {
+          "userPoolId": "us-east-1_d4BqnfxSB",
+          "userPoolName": "smart-lockers-users",
+          "webClientId": "36k55u3l2b5m8gno28ag5rejk1",
+          "nativeClientId": "36k55u3l2b5m8gno28ag5rejk1"
+        }
+      }
     }
   }
 }

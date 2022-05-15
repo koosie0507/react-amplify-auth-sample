@@ -1,1 +1,18 @@
-{}
+{
+  "function": {
+    "authsample4fb6d31eCustomMessage": {
+      "build": true,
+      "providerPlugin": "awscloudformation",
+      "service": "Lambda"
+    }
+  },
+  "auth": {
+    "authsamplee7e4a287": {
+      "service": "Cognito",
+      "serviceType": "imported",
+      "providerPlugin": "awscloudformation",
+      "dependsOn": [],
+      "customAuth": false
+    }
+  }
+}
