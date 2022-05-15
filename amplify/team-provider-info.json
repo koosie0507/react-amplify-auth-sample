@@ -1,32 +1,23 @@
 {
   "dev": {
     "awscloudformation": {
-      "AuthRoleName": "amplify-authsample-dev-144759-authRole",
-      "UnauthRoleArn": "arn:aws:iam::129622671364:role/amplify-authsample-dev-144759-unauthRole",
-      "AuthRoleArn": "arn:aws:iam::129622671364:role/amplify-authsample-dev-144759-authRole",
+      "AuthRoleName": "amplify-authsample-dev-155900-authRole",
+      "UnauthRoleArn": "arn:aws:iam::129622671364:role/amplify-authsample-dev-155900-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::129622671364:role/amplify-authsample-dev-155900-authRole",
       "Region": "us-east-1",
-      "DeploymentBucketName": "amplify-authsample-dev-144759-deployment",
-      "UnauthRoleName": "amplify-authsample-dev-144759-unauthRole",
-      "StackName": "amplify-authsample-dev-144759",
-      "StackId": "arn:aws:cloudformation:us-east-1:129622671364:stack/amplify-authsample-dev-144759/dfd0caf0-d444-11ec-b81e-0a132a39f423",
-      "AmplifyAppId": "d3ofon0e63rrmi"
+      "DeploymentBucketName": "amplify-authsample-dev-155900-deployment",
+      "UnauthRoleName": "amplify-authsample-dev-155900-unauthRole",
+      "StackName": "amplify-authsample-dev-155900",
+      "StackId": "arn:aws:cloudformation:us-east-1:129622671364:stack/amplify-authsample-dev-155900/cb631a50-d44e-11ec-a0b2-0a8d2d4dc5ab",
+      "AmplifyAppId": "d2p2oo599afmw0"
     },
     "categories": {
-      "function": {
-        "authsample4fb6d31eCustomMessage": {
-          "REDIRECTURL": "",
-          "EMAILSUBJECT": "Confirm E-mail",
-          "EMAILMESSAGE": "Please confirm your e-mail.",
-          "deploymentBucketName": "amplify-authsample-dev-144759-deployment",
-          "s3Key": "amplify-builds/authsample4fb6d31eCustomMessage-6e44456e615454743134-build.zip"
-        }
-      },
       "auth": {
-        "authsamplee7e4a287": {
-          "userPoolId": "us-east-1_d4BqnfxSB",
-          "userPoolName": "smart-lockers-users",
-          "webClientId": "36k55u3l2b5m8gno28ag5rejk1",
-          "nativeClientId": "36k55u3l2b5m8gno28ag5rejk1"
+        "authsampleb01a1be7": {
+          "userPoolId": "us-east-1_kWusGSZLF",
+          "userPoolName": "4esttech-users",
+          "webClientId": "7mfcg572blmk7tig8capocag9t",
+          "nativeClientId": "7mfcg572blmk7tig8capocag9t"
         }
       }
     }
