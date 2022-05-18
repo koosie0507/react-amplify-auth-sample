@@ -13,11 +13,11 @@
     },
     "categories": {
       "auth": {
-        "authsampleb01a1be7": {
-          "userPoolId": "us-east-1_kWusGSZLF",
-          "userPoolName": "4esttech-users",
-          "webClientId": "7mfcg572blmk7tig8capocag9t",
-          "nativeClientId": "7mfcg572blmk7tig8capocag9t"
+        "authsampled2c6444d": {
+          "userPoolId": "us-east-1_J1wsagZTO",
+          "userPoolName": "smart-lockers-users",
+          "webClientId": "4gnl5p8g9nb3fndc8kidnros2u",
+          "nativeClientId": "4gnl5p8g9nb3fndc8kidnros2u"
         }
       }
     }

@@ -1,8 +1,11 @@
 {
   "authSelections": "userPoolOnly",
-  "resourceName": "authsampleb01a1be7",
+  "resourceName": "authsampled2c6444d",
   "serviceType": "imported",
   "region": "us-east-1",
+  "usernameAttributes": [
+    "email"
+  ],
   "requiredAttributes": [],
   "passwordPolicyMinLength": 8,
   "passwordPolicyCharacters": [
@@ -12,5 +15,8 @@
     "Requires Symbols"
   ],
   "mfaConfiguration": "OFF",
+  "autoVerifiedAttributes": [
+    "email"
+  ],
   "mfaTypes": []
 }

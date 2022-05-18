@@ -1,6 +1,6 @@
 {
   "auth": {
-    "authsampleb01a1be7": {
+    "authsampled2c6444d": {
       "service": "Cognito",
       "serviceType": "imported",
       "providerPlugin": "awscloudformation",

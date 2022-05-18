@@ -1,22 +1,24 @@
 import React from 'react';
 import {Amplify} from 'aws-amplify';
-import { Authenticator } from '@aws-amplify/ui-react';
+import {Authenticator, useAuthenticator} from '@aws-amplify/ui-react';
+import {Home} from './Home';
 import '@aws-amplify/ui-react/styles.css';
 import awsExports from './aws-exports';
 
 Amplify.configure(awsExports);
 
-function App() {
-    return (
-        <Authenticator loginMechanisms={['email']} signUpAttributes={[]}>
-            {({ signOut, user }) => (
-                <main>
-                    <h1>Hello {user.username}</h1>
-                    <button onClick={signOut}>Sign out</button>
-                </main>
-            )}
-        </Authenticator>
-    );
+
+const App = () => {
+    const {route, user, signOut} = useAuthenticator(context => [context.route]);
+    if (route !== "authenticated") {
+        return (<Authenticator loginMechanisms={["email"]}/>)
+    }
+    let jwt = user.getSignInUserSession().getAccessToken().getJwtToken()
+    return (<Home userToken={jwt} signOut={signOut}/>);
 }
 
-export default App;
+export default () => (
+    <Authenticator.Provider>
+        <App/>
+    </Authenticator.Provider>
+);
