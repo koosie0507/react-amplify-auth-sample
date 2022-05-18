@@ -1,33 +1,75 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.top-menu {
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  background-color: #efefef;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+  border-bottom: 2px solid #009879;
+  justify-content: right;
+}
+
+.sign-out-button {
+  position:relative;
+  alignment: right;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  margin: 8px 32px 8px 32px;
+  background-color: #009879;
+  border: none;
+  border-radius: 5px;
+  color: rgba(255, 255, 255, 0.65);
+  padding: 12px 24px;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.15);
 }
 
-.App-link {
-  color: #61dafb;
+.sign-out-button:hover {
+  cursor: pointer;
+  background-color: #006550;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.45);
 }
 
+.sign-out-button:focus,
+.sign-out-button:active {
+  color: rgba(255, 255, 255, 1);
+}
+
+main {
+  margin: 64px;
+}
+
+.styled-table {
+  border-collapse: collapse;
+  margin: 25px 0;
+  font-size: 0.9em;
+  font-family: sans-serif;
+  min-width: 400px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+}
+
+.styled-table thead tr {
+  background-color: #009879;
+  color: #ffffff;
+  text-align: left;
+}
+
+.styled-table th,
+.styled-table td {
+  padding: 12px 15px;
+}
+
+.styled-table tbody tr {
+  border-bottom: 1px solid #dddddd;
+}
+
+.styled-table tbody tr:nth-of-type(even) {
+  background-color: #f3f3f3;
+}
+
+.styled-table tbody tr:last-of-type {
+  border-bottom: 2px solid #009879;
+}
+
+.styled-table tbody tr.active-row {
+  font-weight: bold;
+  color: #009879;
+}
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);

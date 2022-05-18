@@ -18,7 +18,7 @@ const Locker = ({id, location, code, locked}) => (
 
 const LockerTable = ({lockers}) => {
     return (
-        <table>
+        <table className={"styled-table"}>
             <thead>
             <tr>
                 <td>ID</td>
@@ -67,14 +67,14 @@ export class Home extends React.Component {
     render() {
         return (
             <>
-                <header>
+                <header className={"top-menu"}>
                     <nav>
-                        <h1>Welcome {this.state.user.username}</h1>
-                        <button onClick={this.props.signOut}>Sign Out</button>
+                        <button className={"sign-out-button"} onClick={this.props.signOut}>Sign Out</button>
                     </nav>
                 </header>
                 <main>
-                    <p>Here ya go. Have some lockers!</p>
+                    <h1>Welcome {this.props.username}</h1>
+                    <p>A list of items you won't see without authenticating:</p>
                     <LockerTable lockers={this.state.lockers}/>
                 </main>
             </>

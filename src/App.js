@@ -1,8 +1,10 @@
+import '@aws-amplify/ui-react/styles.css';
+import './App.css';
+
 import React from 'react';
 import {Amplify} from 'aws-amplify';
 import {Authenticator, useAuthenticator} from '@aws-amplify/ui-react';
 import {Home} from './Home';
-import '@aws-amplify/ui-react/styles.css';
 import awsExports from './aws-exports';
 
 Amplify.configure(awsExports);
@@ -14,7 +16,7 @@ const App = () => {
         return (<Authenticator loginMechanisms={["email"]}/>)
     }
     let jwt = user.getSignInUserSession().getAccessToken().getJwtToken()
-    return (<Home userToken={jwt} signOut={signOut}/>);
+    return (<Home userToken={jwt} username={user.username} signOut={signOut}/>);
 }
 
 export default () => (
